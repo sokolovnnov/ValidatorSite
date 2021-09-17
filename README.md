@@ -1,2 +1,1 @@
-Web view for OSM connectivity validator  
-https://connectivity-validator.herokuapp.com/
+Web view for OSM connectivity validator   https://connectivity-validator.herokuapp.com/
