@@ -6,6 +6,7 @@ import ru.antisida.validatorsite.model.SimpleWay;
 import ru.antisida.validatorsite.repo.ResultRepository;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ResultInMemoryRepository extends ResultRepository {
 
@@ -19,7 +20,7 @@ public class ResultInMemoryRepository extends ResultRepository {
                 .values()
                 .stream()
                 .flatMap(simpleNodes1 -> simpleNodes1.stream())
-                .toList();
+                .collect(Collectors.toList());
 
         return simpleNodesToSimpleWays(simpleNodes);
     }
