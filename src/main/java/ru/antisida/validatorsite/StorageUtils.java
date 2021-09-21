@@ -40,8 +40,6 @@ public class StorageUtils {
     public static InputStream downloadFromFTP() throws IOException {
         FTPClient ftpClient = new FTPClient();
 
-
-
         ftpClient.setFileType(FTPClient.BINARY_FILE_TYPE);
         ftpClient.enterLocalPassiveMode();
 
