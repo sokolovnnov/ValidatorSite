@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/cache
         http://www.springframework.org/schema/cache/spring-cache.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd"
 >
-    <context:component-scan base-package="ru.antisida.validatorsite.**.repo"/>
+    <context:component-scan base-package="ru.antisida.validatorsite.**.repo.inmemory"/>
 
 
     <cache:annotation-driven cache-manager="ehCacheManager"/>
@@ -22,17 +22,17 @@
 
     <tx:annotation-driven/>
 
-    <!-- <context:property-placeholder location="classpath:db/postgres.properties" system-properties-mode="OVERRIDE"/>
+     <context:property-placeholder location="classpath:db/postgres.properties" system-properties-mode="OVERRIDE"/>
 
-     &lt;!&ndash;no pooling&ndash;&gt;
+     <!--no pooling-->
      <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
          <property name="driverClassName" value="org.postgresql.Driver"/>
          <property name="url" value="${database.url}"/>
          <property name="username" value="${database.username}"/>
          <property name="password" value="${database.password}"/>
-     </bean>-->
+     </bean>
 
-    <context:property-placeholder location="classpath:/db/heroku.properties" system-properties-mode="OVERRIDE"/>
+   <!-- <context:property-placeholder location="classpath:/db/heroku.properties" system-properties-mode="OVERRIDE"/>
 
     <bean class="java.net.URI" id="dbUrl">
         <constructor-arg value="${DATABASE_URL}"/>
@@ -53,7 +53,7 @@
           p:removeAbandoned="true"
           p:testOnConnect="true"
           p:testWhileIdle="true"/>
-
+-->
 
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
         <constructor-arg ref="dataSource"/>
