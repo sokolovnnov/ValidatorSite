@@ -1,10 +1,13 @@
 package com.github.sokolovnnov.validatorsite.model;
 
-public class SimpleNode {
+import java.io.Serializable;
+
+public class SimpleNode implements Serializable {
 
     private Integer id;
     private long osmId;
     private long wayOsmId;
+    private int regionId;
     private int orderInWay;
     private float lat;
     private float lon;
@@ -12,10 +15,11 @@ public class SimpleNode {
     public SimpleNode() {
     }
 
-    public SimpleNode(Integer id, long osmId, long wayOsmId, int orderInWay, float lat, float lon) {
+    public SimpleNode(Integer id, long osmId, long wayOsmId, int regionId, int orderInWay, float lat, float lon) {
         this.id = id;
         this.osmId = osmId;
         this.wayOsmId = wayOsmId;
+        this.regionId = regionId;
         this.orderInWay = orderInWay;
         this.lat = lat;
         this.lon = lon;
@@ -67,6 +71,14 @@ public class SimpleNode {
 
     public void setLon(float lon) {
         this.lon = lon;
+    }
+
+    public int getRegionId() {
+        return regionId;
+    }
+
+    public void setRegionId(int regionId) {
+        this.regionId = regionId;
     }
 
     @Override
