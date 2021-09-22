@@ -1,4 +1,4 @@
-package ru.antisida.validatorsite.model;
+package com.github.sokolovnnov.model;
 
 public class SimpleNode {
 

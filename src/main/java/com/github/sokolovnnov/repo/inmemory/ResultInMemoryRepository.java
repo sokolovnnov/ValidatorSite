@@ -1,9 +1,9 @@
-package ru.antisida.validatorsite.repo.inmemory;
+package com.github.sokolovnnov.repo.inmemory;
 
+import com.github.sokolovnnov.model.SimpleNode;
+import com.github.sokolovnnov.model.SimpleWay;
 import org.springframework.cache.annotation.Cacheable;
-import ru.antisida.validatorsite.model.SimpleNode;
-import ru.antisida.validatorsite.model.SimpleWay;
-import ru.antisida.validatorsite.repo.ResultRepository;
+import com.github.sokolovnnov.repo.ResultRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;

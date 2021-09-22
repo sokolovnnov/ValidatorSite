@@ -1,7 +1,7 @@
-package ru.antisida.validatorsite.repo;
+package com.github.sokolovnnov.repo;
 
-import ru.antisida.validatorsite.model.SimpleNode;
-import ru.antisida.validatorsite.model.SimpleWay;
+import com.github.sokolovnnov.model.SimpleNode;
+import com.github.sokolovnnov.model.SimpleWay;
 
 import java.util.ArrayList;
 import java.util.Collection;

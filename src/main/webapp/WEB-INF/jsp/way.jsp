@@ -37,10 +37,10 @@
     let wayArr = createNDimArray([0, 0, 0]);
 
     let k = 0;
-    <c:forEach items="${ways}" var="way"><jsp:useBean id="way" type="ru.antisida.validatorsite.model.SimpleWay"/>
+    <c:forEach items="${ways}" var="way"><jsp:useBean id="way" type="com.github.sokolovnnov.model.SimpleWay"/>
 
         var way = [];
-        <c:forEach items="${way.nodes}" var="node"><jsp:useBean id="node" type="ru.antisida.validatorsite.model.SimpleNode"/>
+        <c:forEach items="${way.nodes}" var="node"><jsp:useBean id="node" type="com.github.sokolovnnov.model.SimpleNode"/>
             way.push([${node.lat}, ${node.lon}]);
             k++;
         </c:forEach>

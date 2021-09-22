@@ -1,18 +1,15 @@
-package ru.antisida.validatorsite.repo.jdbc;
+package com.github.sokolovnnov.repo.jdbc;
 
+import com.github.sokolovnnov.model.SimpleNode;
+import com.github.sokolovnnov.model.SimpleWay;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-import ru.antisida.validatorsite.model.SimpleNode;
-import ru.antisida.validatorsite.model.SimpleWay;
-import ru.antisida.validatorsite.repo.ResultRepository;
+import com.github.sokolovnnov.repo.ResultRepository;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Repository
 public class ResultJdbcRepository extends ResultRepository {

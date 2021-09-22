@@ -1,6 +1,6 @@
-package ru.antisida.validatorsite.repo.inmemory;
+package com.github.sokolovnnov.repo.inmemory;
 
-import ru.antisida.validatorsite.model.SimpleNode;
+import com.github.sokolovnnov.model.SimpleNode;
 
 import java.io.Serializable;
 import java.util.List;

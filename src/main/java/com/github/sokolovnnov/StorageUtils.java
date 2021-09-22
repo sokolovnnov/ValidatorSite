@@ -1,8 +1,7 @@
-package ru.antisida.validatorsite;
+package com.github.sokolovnnov;
 
 import org.apache.commons.net.ftp.FTPClient;
-import ru.antisida.validatorsite.repo.inmemory.IsolatedNodes;
-import ru.antisida.validatorsite.repo.inmemory.ResultInMemoryRepository;
+import com.github.sokolovnnov.repo.inmemory.IsolatedNodes;
 
 import java.io.*;
 
