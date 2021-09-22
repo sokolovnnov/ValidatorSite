@@ -1,6 +1,6 @@
-package com.github.sokolovnnov.repo.inmemory;
+package com.github.sokolovnnov.validatorsite.repo.inmemory;
 
-import com.github.sokolovnnov.model.SimpleNode;
+import com.github.sokolovnnov.validatorsite.model.SimpleNode;
 
 import java.io.Serializable;
 import java.util.List;

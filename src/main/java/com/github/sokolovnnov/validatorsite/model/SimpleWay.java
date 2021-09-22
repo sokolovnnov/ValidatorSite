@@ -1,4 +1,4 @@
-package com.github.sokolovnnov.model;
+package com.github.sokolovnnov.validatorsite.model;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 

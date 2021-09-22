@@ -1,9 +1,9 @@
-package com.github.sokolovnnov.repo.inmemory;
+package com.github.sokolovnnov.validatorsite.repo.inmemory;
 
-import com.github.sokolovnnov.model.SimpleNode;
-import com.github.sokolovnnov.model.SimpleWay;
+import com.github.sokolovnnov.validatorsite.model.SimpleNode;
+import com.github.sokolovnnov.validatorsite.model.SimpleWay;
 import org.springframework.cache.annotation.Cacheable;
-import com.github.sokolovnnov.repo.ResultRepository;
+import com.github.sokolovnnov.validatorsite.repo.ResultRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;

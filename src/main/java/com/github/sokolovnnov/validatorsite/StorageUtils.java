@@ -1,7 +1,7 @@
-package com.github.sokolovnnov;
+package com.github.sokolovnnov.validatorsite;
 
 import org.apache.commons.net.ftp.FTPClient;
-import com.github.sokolovnnov.repo.inmemory.IsolatedNodes;
+import com.github.sokolovnnov.validatorsite.repo.inmemory.IsolatedNodes;
 
 import java.io.*;
 

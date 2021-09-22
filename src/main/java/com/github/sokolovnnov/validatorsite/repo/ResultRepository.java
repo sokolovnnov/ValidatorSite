@@ -1,7 +1,7 @@
-package com.github.sokolovnnov.repo;
+package com.github.sokolovnnov.validatorsite.repo;
 
-import com.github.sokolovnnov.model.SimpleNode;
-import com.github.sokolovnnov.model.SimpleWay;
+import com.github.sokolovnnov.validatorsite.model.SimpleNode;
+import com.github.sokolovnnov.validatorsite.model.SimpleWay;
 
 import java.util.ArrayList;
 import java.util.Collection;

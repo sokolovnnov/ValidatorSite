@@ -1,13 +1,13 @@
-package com.github.sokolovnnov.repo.jdbc;
+package com.github.sokolovnnov.validatorsite.repo.jdbc;
 
-import com.github.sokolovnnov.model.SimpleNode;
-import com.github.sokolovnnov.model.SimpleWay;
+import com.github.sokolovnnov.validatorsite.model.SimpleNode;
+import com.github.sokolovnnov.validatorsite.model.SimpleWay;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-import com.github.sokolovnnov.repo.ResultRepository;
+import com.github.sokolovnnov.validatorsite.repo.ResultRepository;
 
 import java.util.List;
 

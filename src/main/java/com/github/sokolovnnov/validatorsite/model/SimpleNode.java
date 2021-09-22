@@ -1,4 +1,4 @@
-package com.github.sokolovnnov.model;
+package com.github.sokolovnnov.validatorsite.model;
 
 public class SimpleNode {
 
