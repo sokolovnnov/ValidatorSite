@@ -14,8 +14,6 @@ public class StorageUtils {
 //        FileInputStream fileInputStream = new FileInputStream(SERIALIZE_PATH + "repository");
         FTPClient ftpClient = new FTPClient();
 
-        ftpClient.connect("185.36.172.214", 21);
-        ftpClient.login("ILYA", "gjgjvflt");
 
         ftpClient.setFileType(FTPClient.BINARY_FILE_TYPE);
         ftpClient.enterLocalPassiveMode();
