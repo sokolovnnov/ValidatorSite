@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="webjars/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+
     <style>
         #map {
             position: absolute;
@@ -37,14 +40,19 @@
     let wayArr = createNDimArray([0, 0, 0]);
 
     let k = 0;
-    <c:forEach items="${ways}" var="way"><jsp:useBean id="way" type="com.github.sokolovnnov.validatorsite.model.SimpleWay"/>
+    <c:forEach items="${ways}" var="way"><jsp:useBean id="way"
+    class="com.github.sokolovnnov.validatorsite.model.SimpleWay"/>
 
-        var way = [];
-        <c:forEach items="${way.nodes}" var="node"><jsp:useBean id="node" type="com.github.sokolovnnov.validatorsite.model.SimpleNode"/>
-            way.push([${node.lat}, ${node.lon}]);
-            k++;
-        </c:forEach>
-        wayArr[k] = way;
+    var way = [];
+    <c:forEach items="${way.nodes}" var="node">
+    <jsp:useBean id="node" class="com.github.sokolovnnov.validatorsite.model.SimpleNode"/>
+    var l = ${node.lat};
+    if (l != 0){
+    way.push([${node.lat}, ${node.lon}]);
+    k++;
+    }
+    </c:forEach>
+    wayArr[k] = way;
 
     </c:forEach>
     let wayArray2 = wayArr.filter(element => element !== null || true);
@@ -54,8 +62,18 @@
 
     for (i = 0; i < wayArray2.length; i++) {
         var polyline = L.polyline(wayArray2[i], {color: 'red'}).addTo(map);
-       // var marker = L.marker(wayArray2[i][0]).addTo(map);
+        // var marker = L.marker(wayArray2[i][0]).addTo(map);
     }
+
+    // $.ajax({
+    //     type: 'GET',
+    //     url: 'http://localhost:8080/validator/rest',
+    //     dataType: 'json',
+    //     success: function(data) {
+    //         console.log(data)
+    //
+    //     }
+    // });
     // zoom the map to the polyline
     // map.fitBounds(polyline.getBounds());
 </script>

@@ -1,9 +1,12 @@
 package com.github.sokolovnnov.validatorsite.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.io.Serializable;
 
 public class SimpleNode implements Serializable {
 
+    @JsonIgnore
     private Integer id;
     private long osmId;
     private long wayOsmId;
