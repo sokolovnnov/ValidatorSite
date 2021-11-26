@@ -6,8 +6,8 @@ import java.io.Serializable;
 
 public class SimpleNode implements Serializable {
 
-    @JsonIgnore
-    private Integer id;
+//    @JsonIgnore
+//    private Integer id;
     private long osmId;
     private long wayOsmId;
     private int regionId;
@@ -19,7 +19,7 @@ public class SimpleNode implements Serializable {
     }
 
     public SimpleNode(Integer id, long osmId, long wayOsmId, int regionId, int orderInWay, float lat, float lon) {
-        this.id = id;
+//        this.id = id;
         this.osmId = osmId;
         this.wayOsmId = wayOsmId;
         this.regionId = regionId;
@@ -28,9 +28,9 @@ public class SimpleNode implements Serializable {
         this.lon = lon;
     }
 
-    public int getId() {
-        return id;
-    }
+//    public int getId() {
+//        return id;
+//    }
 
     public long getOsmId() {
         return osmId;
@@ -52,9 +52,9 @@ public class SimpleNode implements Serializable {
         return lon;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+//    public void setId(int id) {
+//        this.id = id;
+//    }
 
     public void setOsmId(long osmId) {
         this.osmId = osmId;
@@ -93,20 +93,20 @@ public class SimpleNode implements Serializable {
 
         if (osmId != that.osmId) return false;
         if (wayOsmId != that.wayOsmId) return false;
+        if (regionId != that.regionId) return false;
         if (orderInWay != that.orderInWay) return false;
-        if (lat != that.lat) return false;
-        if (lon != that.lon) return false;
-        return id != null ? id.equals(that.id) : that.id == null;
+        if (Float.compare(that.lat, lat) != 0) return false;
+        return Float.compare(that.lon, lon) == 0;
     }
 
     @Override
     public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (int) (osmId ^ (osmId >>> 32));
+        int result = (int) (osmId ^ (osmId >>> 32));
         result = 31 * result + (int) (wayOsmId ^ (wayOsmId >>> 32));
+        result = 31 * result + regionId;
         result = 31 * result + orderInWay;
-        result = (int) (31 * result + lat);
-        result = (int) (31 * result + lon);
+        result = 31 * result + (lat != +0.0f ? Float.floatToIntBits(lat) : 0);
+        result = 31 * result + (lon != +0.0f ? Float.floatToIntBits(lon) : 0);
         return result;
     }
 }
