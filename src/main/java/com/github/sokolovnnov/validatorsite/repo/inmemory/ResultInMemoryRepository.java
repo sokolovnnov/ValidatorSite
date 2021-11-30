@@ -1,5 +1,6 @@
 package com.github.sokolovnnov.validatorsite.repo.inmemory;
 
+import com.github.sokolovnnov.connectivitytest.repository.inMemory.IsolatedNodeStorage;
 import com.github.sokolovnnov.validatorsite.StorageUtils;
 import com.github.sokolovnnov.connectivitytest.model.SimpleNode;
 import com.github.sokolovnnov.connectivitytest.model.SimpleWay;

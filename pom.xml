@@ -120,7 +120,7 @@
         <dependency>
             <groupId>com.github.sokolovnnov</groupId>
             <artifactId>OSMConnectivityValidator</artifactId>
-            <version>ae93a72ae7</version>
+            <version>a88bf9901f</version>
         </dependency>
 
 

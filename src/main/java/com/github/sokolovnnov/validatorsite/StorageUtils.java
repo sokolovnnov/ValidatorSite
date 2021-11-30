@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.sokolovnnov.connectivitytest.model.SimpleNode;
 import org.apache.commons.net.ftp.FTPClient;
-import com.github.sokolovnnov.validatorsite.repo.inmemory.IsolatedNodeStorage;
+import com.github.sokolovnnov.connectivitytest.repository.inMemory.IsolatedNodeStorage;
 
 import java.io.*;
 import java.util.List;

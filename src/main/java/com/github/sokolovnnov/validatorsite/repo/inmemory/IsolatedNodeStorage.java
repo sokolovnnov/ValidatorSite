@@ -1,3 +1,4 @@
+/*
 package com.github.sokolovnnov.validatorsite.repo.inmemory;
 
 import com.github.sokolovnnov.connectivitytest.model.SimpleNode;
@@ -17,7 +18,8 @@ public class IsolatedNodeStorage implements Serializable {
     public IsolatedNodeStorage() {
     }
 
-    /*@Override
+    */
+/*@Override
     public void writeExternal(ObjectOutput out) throws IOException {
         out.writeInt(simpleNodes.size());
         for (SimpleNode simpleNode : simpleNodes) {
@@ -34,5 +36,7 @@ public class IsolatedNodeStorage implements Serializable {
             simpleNodes.add(simpleNode);
         }
         this.simpleNodes = simpleNodes;
-    }*/
+    }*//*
+
 }
+*/
