@@ -41,12 +41,8 @@ public class StorageUtils {
 
         FTPClient ftpClient = new FTPClient();
 
-//        ftpClient.connect(System.getenv("FTP_ADDRESS"), Integer.parseInt(System.getenv("FTP_PORT")));
-//        ftpClient.login(System.getenv("FTP_USER"), System.getenv("FTP_PASSWORD"));
-
-
-        ftpClient.connect("185.36.172.214", 21);
-        ftpClient.login("ILYA", "gjgjvflt");
+        ftpClient.connect(System.getenv("FTP_ADDRESS"), Integer.parseInt(System.getenv("FTP_PORT")));
+        ftpClient.login(System.getenv("FTP_USER"), System.getenv("FTP_PASSWORD"));
 
 
         ftpClient.setFileType(FTPClient.BINARY_FILE_TYPE);

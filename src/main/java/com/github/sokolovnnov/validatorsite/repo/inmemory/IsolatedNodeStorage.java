@@ -8,14 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class IsolatedNodeStorage implements Externalizable {
+public class IsolatedNodeStorage implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     public List<SimpleNode> simpleNodes = new ArrayList<>();
 
     public IsolatedNodeStorage() {
     }
 
-    @Override
+    /*@Override
     public void writeExternal(ObjectOutput out) throws IOException {
         out.writeInt(simpleNodes.size());
         for (SimpleNode simpleNode : simpleNodes) {
@@ -32,5 +34,5 @@ public class IsolatedNodeStorage implements Externalizable {
             simpleNodes.add(simpleNode);
         }
         this.simpleNodes = simpleNodes;
-    }
+    }*/
 }

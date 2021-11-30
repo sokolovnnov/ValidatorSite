@@ -10,8 +10,10 @@ public class Main {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 //        StorageUtils.downloadFromFTP();
 
-        IsolatedNodeStorage isolatedNodeStorage
-                = StorageUtils.deSerializeInMemoryRepository();
-        isolatedNodeStorage.simpleNodes.stream().forEach(System.out::println);
+//        IsolatedNodeStorage isolatedNodeStorage
+//                = StorageUtils.deSerializeInMemoryRepository();
+//        isolatedNodeStorage.simpleNodes.stream().forEach(System.out::println);
+        System.out.println(System.getenv("FTP_USER"));
+        System.out.println(Integer.parseInt(System.getenv("FTP_PORT")));
     }
 }
