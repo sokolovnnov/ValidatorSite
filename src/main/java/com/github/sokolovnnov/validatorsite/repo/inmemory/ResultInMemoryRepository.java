@@ -18,8 +18,8 @@ public class ResultInMemoryRepository extends ResultRepository {
 
     @PostConstruct
     public void runAfterStartup() throws IOException, ClassNotFoundException {
-//        setIsolatedNodes(StorageUtils.deSerializeInMemoryRepository());
-        setIsolatedNodesList(StorageUtils.fromJson());
+        setIsolatedNodes(StorageUtils.deSerializeInMemoryRepository());
+//        setIsolatedNodesList(StorageUtils.fromJson());
     }
 
     @Override
