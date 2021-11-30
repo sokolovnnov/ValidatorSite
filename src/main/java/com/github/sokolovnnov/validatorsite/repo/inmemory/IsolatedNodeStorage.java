@@ -1,6 +1,6 @@
 package com.github.sokolovnnov.validatorsite.repo.inmemory;
 
-import com.github.sokolovnnov.validatorsite.model.SimpleNode;
+import com.github.sokolovnnov.connectivitytest.model.SimpleNode;
 import org.springframework.stereotype.Component;
 
 import java.io.*;

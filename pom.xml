@@ -117,6 +117,12 @@
             <version>${webjars-jquery.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.sokolovnnov</groupId>
+            <artifactId>OSMConnectivityValidator</artifactId>
+            <version>ae93a72ae7</version>
+        </dependency>
+
 
         <!-- OSM Data  -->
         <dependency>
@@ -124,6 +130,8 @@
             <artifactId>OSMemory</artifactId>
             <version>RELEASE-1.11</version>
         </dependency>
+
+
 
         <!-- Spring -->
         <dependency>

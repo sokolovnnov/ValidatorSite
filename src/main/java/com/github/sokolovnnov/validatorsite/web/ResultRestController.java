@@ -5,7 +5,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.github.sokolovnnov.validatorsite.model.SimpleWay;
+import com.github.sokolovnnov.connectivitytest.model.SimpleWay;
 import com.github.sokolovnnov.validatorsite.repo.ResultRepository;
 
 import java.util.List;

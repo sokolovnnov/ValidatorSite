@@ -1,3 +1,4 @@
+/*
 package com.github.sokolovnnov.validatorsite.model;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
@@ -61,3 +62,4 @@ public class SimpleWay {
         return result;
     }
 }
+*/

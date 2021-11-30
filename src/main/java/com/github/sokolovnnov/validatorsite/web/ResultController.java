@@ -1,6 +1,6 @@
 package com.github.sokolovnnov.validatorsite.web;
 
-import com.github.sokolovnnov.validatorsite.model.SimpleWay;
+import com.github.sokolovnnov.connectivitytest.model.SimpleWay;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

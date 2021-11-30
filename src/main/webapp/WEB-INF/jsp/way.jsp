@@ -41,11 +41,11 @@
 
     let k = 0;
     <c:forEach items="${ways}" var="way"><jsp:useBean id="way"
-    class="com.github.sokolovnnov.validatorsite.model.SimpleWay"/>
+    class="com.github.sokolovnnov.connectivitytest.model.SimpleWay"/>
 
     var way = [];
     <c:forEach items="${way.nodes}" var="node">
-    <jsp:useBean id="node" class="com.github.sokolovnnov.validatorsite.model.SimpleNode"/>
+    <jsp:useBean id="node" class="com.github.sokolovnnov.connectivitytest.model.SimpleNode"/>
     var l = ${node.lat};
     if (l != 0){
     way.push([${node.lat}, ${node.lon}]);

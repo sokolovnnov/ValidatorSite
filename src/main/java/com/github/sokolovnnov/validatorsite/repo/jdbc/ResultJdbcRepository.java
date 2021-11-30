@@ -1,7 +1,7 @@
 package com.github.sokolovnnov.validatorsite.repo.jdbc;
 
-import com.github.sokolovnnov.validatorsite.model.SimpleNode;
-import com.github.sokolovnnov.validatorsite.model.SimpleWay;
+import com.github.sokolovnnov.connectivitytest.model.SimpleNode;
+import com.github.sokolovnnov.connectivitytest.model.SimpleWay;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

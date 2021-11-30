@@ -1,8 +1,8 @@
 package com.github.sokolovnnov.validatorsite.repo.inmemory;
 
 import com.github.sokolovnnov.validatorsite.StorageUtils;
-import com.github.sokolovnnov.validatorsite.model.SimpleNode;
-import com.github.sokolovnnov.validatorsite.model.SimpleWay;
+import com.github.sokolovnnov.connectivitytest.model.SimpleNode;
+import com.github.sokolovnnov.connectivitytest.model.SimpleWay;
 import org.springframework.cache.annotation.Cacheable;
 import com.github.sokolovnnov.validatorsite.repo.ResultRepository;
 import org.springframework.stereotype.Repository;

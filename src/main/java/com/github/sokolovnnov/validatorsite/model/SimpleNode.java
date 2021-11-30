@@ -1,3 +1,4 @@
+/*
 package com.github.sokolovnnov.validatorsite.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -109,4 +110,4 @@ public class SimpleNode implements Serializable {
         result = 31 * result + (lon != +0.0f ? Float.floatToIntBits(lon) : 0);
         return result;
     }
-}
+}*/
